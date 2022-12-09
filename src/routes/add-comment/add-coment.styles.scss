@@ -1,0 +1,24 @@
+.add-comment {
+   
+    section {
+        width: min(640px,100%);
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    textarea {
+        outline: none;
+        border-radius: 5px ;
+        display: block;
+        width: 100%;
+        background: rgb(243, 243, 243);
+        margin: 1rem 0rem;
+        padding: 1rem;
+    }
+    button {
+        width: 100%;
+    }
+}

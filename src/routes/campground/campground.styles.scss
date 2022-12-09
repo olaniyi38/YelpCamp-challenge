@@ -1,0 +1,133 @@
+.campground {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem 3rem;
+
+    section {
+        padding: clamp(1rem, 6vw, 4rem);
+        border-radius: 10px;
+        margin: 0 auto;
+
+
+    }
+
+
+
+    .campground_info {
+        border: 1px solid;
+
+        .campground_info_img {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .campground_info_content {
+            margin: 1rem 0rem;
+
+            hgroup {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: capitalize;
+
+                h1 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                padding: 1rem 0rem;
+                color: rgb(71, 71, 71);
+            }
+
+            span {
+                font-style: oblique;
+                display: inline-block;
+            }
+        }
+    }
+
+    .campground_reviews {
+        border: 1px solid;
+        width: 100%;
+
+        > div {
+            max-height: 30rem;
+            overflow-y: scroll;
+            padding: 0rem .5rem;
+            margin-bottom: .2rem;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 5px;
+                margin-left: 3px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                border-radius: 50px;                
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 50px;
+
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        }
+
+        button {
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0rem 1rem;
+
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }
+    .spinner {
+        border: 3px solid rgb(196,196,196) ;
+    }
+}
+
+// DESKTOP AND TABLET
+
+@media (min-width:1024px) {
+    .campground {
+        grid-template-columns: 1fr 1fr;
+
+        .campground_info {
+            .campground_info_content {
+
+                hgroup {
+
+                    h1 {
+                        font-size: 1.3rem;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

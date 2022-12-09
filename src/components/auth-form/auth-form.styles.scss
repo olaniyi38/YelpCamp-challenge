@@ -1,0 +1,19 @@
+.auth-form {
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    button {
+        width: 100%;
+    }
+    span {
+        display: block;
+        margin-top: .5rem;
+        text-align: right;
+        
+        a {
+            color: cyan;
+            text-decoration: underline;
+            margin-left: .5rem;
+        }
+    }
+}

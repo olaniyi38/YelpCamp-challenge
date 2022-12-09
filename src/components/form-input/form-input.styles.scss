@@ -1,0 +1,22 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem 0rem;
+    label {
+        color: rgb(36, 36, 36);
+    }
+    
+
+    input {
+      background: #f1f1f1;
+      padding: .5rem 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      
+    }
+
+    .error {
+      color:red;
+    }
+}

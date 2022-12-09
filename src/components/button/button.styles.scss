@@ -1,0 +1,51 @@
+.button {
+    padding: 1rem 2rem;
+    color: white;
+    background: black;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .1s ease-in-out;
+    position: relative;
+    letter-spacing: 1px;
+   
+   .button_spinner-container {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+   }
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+   
+    &.button_inverted {
+        background: white;
+        color: black;
+        border: 1px solid black;
+
+        &:hover {
+            color: white;
+            background: black;
+        }
+        &:disabled {
+            background: rgb(192,192,192);
+            border:none;
+            color:white;
+    
+        }
+    }
+
+    &:disabled {
+        background: rgb(192,192,192);
+        border:none;
+        color:white;
+
+    }
+}
+

@@ -1,0 +1,69 @@
+.auth {
+    .auth_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+    }
+
+    .auth_form {
+        flex: 2 1 0%;
+        padding: 1rem 2rem 0rem 0rem;
+        width: min(100%,40rem);
+    }
+
+    & > a {
+       font-weight: 600;
+       display: flex;
+       align-items: center;
+       gap: 0rem 1rem;
+       margin-bottom: 1rem;
+       svg {
+        width: 1rem;
+       }
+
+    }
+
+    .auth_testimonial {
+        flex: 1 1 0%;
+        padding: 3rem 3rem 0rem 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        span {
+            font-weight: 600;
+        }
+        svg {
+            margin: 1rem auto;
+            width: 5rem;height: 5rem;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .auth {
+        .auth_container {
+            flex-direction: row;
+        }
+        .auth_form {
+            flex: 2 1 0%;
+            padding: 1rem 10rem 0rem 0rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .auth_testimonial {
+            padding: 5rem 3rem 0rem 3rem;
+        }
+    }
+}

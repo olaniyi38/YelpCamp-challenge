@@ -1,0 +1,92 @@
+
+// MOBILE STYLES
+
+.search-page {
+
+    .search-page_hero {
+       margin-bottom: 2rem;
+       
+        padding: 2rem  ;
+        
+        background:#F8F5F0;
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 1rem 0rem;
+        }
+
+        a {
+            display: block;
+            font-size: .9rem;
+            text-decoration: underline;
+            color: rgb(70, 69, 69);
+            margin-top: .8rem;
+        }
+
+
+        .search-page_search {
+            .search-page_input {
+                position: relative;
+                input {
+                    padding: 1rem;
+                    font-size: 1rem;
+                    background: #f1f1f1;
+                    outline: none;
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+                svg {
+                    position: absolute;
+                    right: 1rem;
+                    top: 0rem;
+                    bottom: 0rem;
+                    margin: auto 0;
+                }
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .search-page_camps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+        gap: 1rem;
+        
+ 
+    }
+
+   
+}
+
+// DESKTOP AND TABLET
+
+@media (min-width:640px) {
+    .search-page {
+      
+        .search-page_hero {
+           margin-bottom: 4rem;
+            padding: 4rem 2rem ;
+            .search-page_search {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                button {
+                    width: auto;
+                }
+                .search-page_input {
+                    input {
+                        margin-bottom: 0rem;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
